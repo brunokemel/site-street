@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robo", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+h1 {
+    font-family: "Rubik Vinyl", system-ui;
+}
+
+h2 {
+    font-family: "Rubik Vinyl", system-ui;
+    font-style: italic;
+    color: dimgray;
+}
+
+header {
+    background-color: black;
+    padding-top: 16px;
+    color: #fff;
+}
+
+nav {
+    background-color: dimgray;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hambuerguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hambuerguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-roupas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lista-roupas li {
+    list-style: none;
+    width: 22.5%;
+    margin-bottom: 24px;
+}
+
+.lista-roupas li img {
+    max-width: 100%;
+}
+
+.lista-roupas li h3{
+    margin: 16px 0;
+}
+
+.lista-roupas li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.lista-roupas li button:hover {
+    opacity: 0.7;
+}
+
+.lista-roupas li strong {
+    margin: 16px 0;
+    display: block;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        padding: 0 20px; 
+    }
+
+    .menu-hambuerguer {
+        display: block; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    .lista-roupas li {
+        width: 45%; 
+    }
+}
+
+
+@media (max-width: 640px) {
+    header {
+        padding-top: 8px;
+        max-width: 100%;
+        align-items: center; 
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .container{
+        max-width: 90%;
+        display: block
+    }
+  
+    #sobre-a-loja img {
+        max-width: 340px;
+        margin-right: 24px;
+    }
+
+    .menu-hambuerguer {
+        margin-right: 16px; 
+    }
+
+    nav {
+        text-align: center; 
+    }
+
+    .lista-roupas li {
+        width: 80%;
+        margin-left: 15px; 
+    }
+}
